@@ -1,0 +1,85 @@
+.navigation-header {
+    background-image: url('https://www.iamthecode.org/wp-content/uploads/2021/03/florian-olivo-4hbJ-eymZ1o-unsplash-scaled-e1616631053918.jpg');
+    font-size: 64px;
+    text-align: center;
+    color: antiquewhite;
+    border: 2px solid black;
+}
+
+.navigation-panel {
+    opacity: true;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navigation-panel ::before {
+    content: "|";
+}
+
+.navigation-panel ::after {
+    content: "|";
+}
+
+.navigation-panel a {
+    flex-grow: 1;
+    color: antiquewhite;
+    text-align: center;
+    padding: 12px;
+    border: 2px solid black;    
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+.navigation-panel :hover {
+    background-color: aqua;
+}
+
+.main-container {
+    background-image: url('https://www.biztek-solutions.com/wp-content/uploads/2016/02/IT-Services.png');
+}
+
+.project-container {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project-container img {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+
+.project-container div:nth-of-type(2):hover {
+    opacity: 50%;
+}
+
+.personal-info {
+    background-color: rgb(222, 184, 135, 0.5);
+}
+
+.footer {
+    display: flex;
+    background-image: url('https://www.iamthecode.org/wp-content/uploads/2021/03/florian-olivo-4hbJ-eymZ1o-unsplash-scaled-e1616631053918.jpg');
+    flex-direction: column;
+    justify-content: center;
+    position:relative;
+    bottom: 0;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.footer div:last-child {
+    color: red;
+}
+
+.footer a {
+    color: aquamarine;
+}
+
+ul>li {
+    font-size: 14px;
+}
