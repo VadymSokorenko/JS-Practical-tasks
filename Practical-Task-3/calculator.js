@@ -22,6 +22,27 @@ window.onload = function() {
         calculatorData.operator = e.target.value;
     });
 
+    function saveToCache() {
+        let valueToCache;
+        let focusedElement = document.getElementById(activeElement.id);
+
+        if(focusedElement.id === 'num1') {
+            valueToCache = calculatorData.num1;
+        } else if(focusedElement.id === 'num2') {
+            valueToCache = calculatorData.num2;
+        }
+
+        localStorage.setItem("cachedValue", valueToCache);
+
+        document.getElementById(activeElement.id).focus;
+    }
+
+    function logCache() {
+        console.log(localStorage.getItem("cachedValue"));
+
+        document.getElementById(activeElement.id).focus;
+    }
+
     function addToInput(value) {
         document.getElementById(activeElement.id).focus;
         let focusedElement = document.getElementById(activeElement.id);
@@ -30,7 +51,7 @@ window.onload = function() {
             focusedElement.value += value;
             focusedElement.dispatchEvent(new Event('input'));
         }
-
+        
         document.getElementById(activeElement.id).focus;
     }
 
