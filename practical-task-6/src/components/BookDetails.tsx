@@ -20,11 +20,11 @@ const BookDetails: React.FC = () => {
   return (
     <div>
       <h1>{book.name}</h1>
+      <img src={book.image} alt={book.name} height={250} width={200} />
       <p>Author: {book.author}</p>
       <p>Genre: {book.genre}</p>
       <p>Rating: {book.rating}</p>
       <p>Description: {book.description}</p>
-      <img src={book.image} alt={book.name} height={250} width={200} />
       <br />
       <Link to="/">Back to Book List</Link>
     </div>
